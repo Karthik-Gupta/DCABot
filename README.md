@@ -1,13 +1,19 @@
-# Sample Hardhat Project
+# DCA Bot
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This project demosntrates the working of DCA bot.
+Includes uniswap v2, v3 and a pricefeed oracle.
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+## Quickstart
+
+- Install dependencies: `npm install`
+- Deploy all contracts and example tokens: `npm run deploy:[uni-v2|uni-v3|oracle|dca-bot]:[sepolia]`
+
+## Deployment
+
+# uni-v3
+
+deploy-uniswap-v3.ts
+
+Replace your own WETH9 contract address
+
