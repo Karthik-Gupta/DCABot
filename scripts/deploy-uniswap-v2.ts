@@ -31,7 +31,7 @@ async function main() {
   console.log(`Factory deployed to ${factoryAddress}`);
 
   // 5. Initialize a contract factory specifically for the Tether (USDT) token.
-  const USDT = await ethers.getContractAt("Tether", owner);
+  const USDT = await ethers.getContractFactory("Tether", owner);
 
   // 6. Deploy the USDT contract using the above-initialized factory.
   const usdt = await USDT.deploy();
@@ -41,7 +41,7 @@ async function main() {
   console.log(`USDT deployed to ${usdtAddress}`);
 
   // 8. Similarly, initialize a contract factory for the UsdCoin (USDC) token.
-  const USDC = await ethers.getContractAt("UsdCoin", owner);
+  const USDC = await ethers.getContractFactory("UsdCoin", owner);
 
   // 9. Deploy the USDC contract.
   const usdc = await USDC.deploy();
