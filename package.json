@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "DCA Bot with uniswap v2 v3 and price oracle",
   "scripts": {
-    "deploy:uni-v2:sepolia": "hardhat run scripts/deploy-uniswap-v2.ts --network sepolia && hardhat run scripts/deploy-tokens.ts --network sepolia",
-    "deploy:uni-v3:sepolia": "hardhat run scripts/deploy-uniswap-v3.ts --network sepolia && hardhat run scripts/deploy-tokens.ts --network sepolia",
-    "deploy:oracle:sepolia": "hardhat run scripts/deploy-oracle.ts --network sepolia && hardhat run scripts/deploy-tokens.ts --network sepolia"
+    "deploy:uni-v2:sepolia": "hardhat run scripts/deploy-uniswap-v2.ts --network sepolia",
+    "deploy:uni-v3:sepolia": "hardhat run scripts/deploy-uniswap-v3.ts --network sepolia",
+    "deploy:oracle:sepolia": "hardhat run scripts/deploy-oracle.ts --network sepolia"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
